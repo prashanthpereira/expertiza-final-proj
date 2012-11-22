@@ -1,19 +1,45 @@
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+      type="text/css" xmlns="http://www.w3.org/1999/html"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
 <h1>User Profile Information</h1>
 
 <br/>
+<script>
+    $(document).ready(function() {
+        $("#tabs").tabs({ selected: 0, event: "click"});
+    });
+</script>
 
 <% form_tag({:action => 'update', :id => @user}) do %>
-  <%= render :partial => 'users/name' %>
-  <hr/>
-  <%= render :partial => 'users/password' %> 
-  <i><font size=-2>If password field is blank, the password will not be updated.</font></i>
-  <hr/>
-  <%= render :partial => 'users/email' %>
-  <hr/>
-  <%= render :partial => 'users/prefs' %>
-  <%= render :partial => 'handle' %>  
-  <% if @user.role.parent_id != nil %>
-    <%= render :partial => 'limit' %>
-  <% end %>    
+
+  <div id="tabs">
+        <ul>
+          <li><a href="#tab1"> General</a></li>
+          <li><a href="#tab2"> Preferences</a></li>
+          <li><a href="#tab3"> Handle</a></li>
+          <li><a href="#tab4"> Notifications</a></li>
+        </ul>
+    <div id="tab1">
+      <%= render :partial => 'users/name' %>
+      <%= render :partial => 'users/password' %>
+      <i><font size=-2>If password field is blank, the password will not be updated.</font></i>
+      <%= render :partial => 'users/email' %>
+    </div>
+    <div id="tab2">
+      <%= render :partial => 'users/prefs' %>
+    </div>
+    <div id="tab3">
+      <%= render :partial => 'handle' %>
+    </div>
+    <div id="tab4">
+
+        <% if @user.role.parent_id != nil %>
+            <%= render :partial => 'limit' %>
+        <% end %>
+    </div>
+  </div>
+
   <%= submit_tag 'Save' %>
 <% end %>
