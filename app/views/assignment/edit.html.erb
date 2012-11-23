@@ -19,6 +19,7 @@
         <li><a href="#tab2"> Rubrics</a></li>
         <li><a href="#tab3"> Review Strategy</a></li>
         <li><a href="#tab4"> Deadlines</a></li>
+        <li><a href="#tab5"> Participants</a></li>
       </ul>
       <div id="tab1">
         <%= render :partial => 'content' %>
@@ -31,6 +32,9 @@
       </div>
       <div id="tab4">
             <%= render :partial => 'deadlines' %>
+      </div>
+      <div id="tab5">
+        <%= render :partial => 'participants/list' %>
       </div>
     </div>
 

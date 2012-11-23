@@ -20,6 +20,7 @@
         <li><a href="#tab3"> Review Strategy</a></li>
         <li><a href="#tab4"> Deadlines</a></li>
         <li><a href="#tab5"> Availability</a></li>
+        <li><a href="#tab6"> Add Participants</a></li>
       </ul>
       <div id="tab1">
         <%= render :partial => 'content' %>
@@ -42,6 +43,10 @@
         <%= hidden_field_tag('assignment[private]',@private) %>
         <%= render :partial => 'availability_flag' %>
       </div>
+      <div id="tab6">
+        <%= render :partial => 'import_users' %>
+      </div>
+
     </div>
 
     &nbsp;&nbsp;<%= submit_tag "Save assignment" %>

@@ -1,0 +1,12 @@
+<br/>
+<%= render :partial => '/shared_scripts/user_list',
+           :locals => {:controller => 'participants',
+                       :user_list => @participants}%>
+
+</br>
+</br>
+
+<h4> Add Participants </h4>
+<%= render :partial => 'assignment/import_users',
+    :locals => {:model => 'Assignment',
+                :id => @assignment.id }%>

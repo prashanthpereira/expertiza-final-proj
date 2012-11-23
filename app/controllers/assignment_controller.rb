@@ -159,7 +159,8 @@ class AssignmentController < ApplicationController
         
         # Creating node information for assignment display
         @assignment.create_node()
-        
+        importParticipants(params, @assignment.id)
+
         flash[:alert] = "There is already an assignment named \"#{@assignment.name}\". &nbsp;<a style='color: blue;' href='../../assignment/edit/#{@assignment.id}'>Edit assignment</a>" if @assignment.duplicate_name?
         flash[:note] = 'Assignment was successfully created.'
         redirect_to :action => 'list', :controller => 'tree_display'
@@ -180,6 +181,7 @@ class AssignmentController < ApplicationController
   def edit
     @assignment = Assignment.find(params[:id])
     prepare_to_edit
+    @participants = @assignment.participants
   end
   
   def prepare_to_edit
@@ -194,7 +196,7 @@ class AssignmentController < ApplicationController
     get_limits_and_weights    
     @wiki_types = WikiType.find(:all)
   end
-  
+
   def define_instructor_notification_limit(assignment_id, questionnaire_id, limit)
     existing = NotificationLimit.find(:first, :conditions => ['user_id = ? and assignment_id = ? and questionnaire_id = ?',session[:user].id,assignment_id,questionnaire_id])
     if existing.nil?
@@ -285,11 +287,13 @@ class AssignmentController < ApplicationController
       end
     end
     @assignment = Assignment.find(params[:id])
-    begin 
+    begin
       oldpath = @assignment.get_path
     rescue
       oldpath = nil
     end
+
+    importParticipants(params, @assignment.id)
 
     if params[:days].nil? && params[:weeks].nil?
       @days = 0
@@ -331,9 +335,9 @@ class AssignmentController < ApplicationController
             raise "Please enter a valid date & time" if due_date_temp.errors.length > 0
           end
         end
-     
+
         flash[:notice] = 'Assignment was successfully updated.'
-        redirect_to :action => 'show', :id => @assignment                  
+        redirect_to :action => 'show', :id => @assignment
      
       rescue
         flash[:error] = $!
@@ -345,7 +349,20 @@ class AssignmentController < ApplicationController
       render :action => 'edit'
     end    
   end
-  
+
+  def importParticipants(params, assignment_id)
+    file = params['file']['value']
+    items = file.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/)
+    assignment = Assignment.find(assignment_id)
+
+    for item in items
+      user = User.find_by_name(item)
+      if(user)
+          assignment.add_participant(item)
+      end
+    end
+  end
+
   def show
     @assignment = Assignment.find(params[:id])
   end
