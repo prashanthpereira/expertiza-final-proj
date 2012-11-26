@@ -11,7 +11,7 @@
     });
 </script>
 
-<% form_tag( {:action => 'create'}, :onsubmit => 'return checkForm();', :onload => 'addElement();')do %>
+<% form_tag( {:action => 'create'}, {:method => 'post', :multipart => true, :onsubmit => 'return checkForm();', :onload => 'addElement();'})do %>
 
     <div id="tabs">
       <ul>

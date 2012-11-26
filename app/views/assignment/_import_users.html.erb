@@ -1,6 +1,12 @@
-    <br/>
-    Enter user names: <%= text_field_with_auto_complete :file, {:value => ''} %>
+<h4> Add Participants </h4>
+
+    Enter user names: <%= text_field_with_auto_complete :usernames, {:value => ''} %>
     * To add a participant, the participant must be an existing user.<br>
     * The usernames must be comma separated<br/>
     &nbsp;&nbsp;&nbsp
     <br/><br/>
+
+<h4> Import Participants </h4>
+    <label for="file">File to Import Participants: </label><%= file_field_tag 'file', :size => 40 %><br/><br/>
+    * Each user in the file should be an existing user with the system<br>
+

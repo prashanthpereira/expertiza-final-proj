@@ -351,14 +351,24 @@ class AssignmentController < ApplicationController
   end
 
   def importParticipants(params, assignment_id)
-    file = params['file']['value']
-    items = file.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/)
+
     assignment = Assignment.find(assignment_id)
 
-    for item in items
-      user = User.find_by_name(item)
-      if(user)
-          assignment.add_participant(item)
+    if params['usernames']['value']
+      names = params['usernames']['value']
+      items = names.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/)
+      for item in items
+        assignment.add_participant(item)
+      end
+    end
+
+    if params[:file]
+      file = params[:file]
+      file.each_line do |line|
+        line.chomp!
+        unless line.empty?
+          assignment.add_participant(line)
+        end
       end
     end
   end
