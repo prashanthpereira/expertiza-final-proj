@@ -367,7 +367,21 @@ class AssignmentController < ApplicationController
       file.each_line do |line|
         line.chomp!
         unless line.empty?
-          assignment.add_participant(line)
+          user = User.find_by_name(line)
+          if !user
+            user_params = line.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/);
+            if !User.find_all_by_name(user_params[0])
+              user = User.new
+              user.clear_password = user_params[3].strip
+              user.email = user_params[2].strip
+              user.fullname = user_params[1].strip
+              user.name = user_params[0]
+              user.save
+            end
+            assignment.add_participant(user_params[0])
+          elsif
+            assignment.add_participant(line)
+          end
         end
       end
     end

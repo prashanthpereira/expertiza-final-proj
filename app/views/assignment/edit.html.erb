@@ -20,6 +20,7 @@
         <li><a href="#tab3"> Review Strategy</a></li>
         <li><a href="#tab4"> Deadlines</a></li>
         <li><a href="#tab5"> Participants</a></li>
+        <%  if @assignment.team_assignment? %> <li><a href="#tab6"> Teams </a></li> <% end %>
       </ul>
       <div id="tab1">
         <%= render :partial => 'content' %>
@@ -36,6 +37,11 @@
       <div id="tab5">
         <%= render :partial => 'participants/list' %>
       </div>
+      <%if @assignment.team_assignment? %>
+      <div id="tab6">
+        <%= render :partial => 'team/form' %>
+      </div>
+      <% end %>
     </div>
 
     &nbsp;&nbsp;<%= submit_tag "Save assignment" %>
