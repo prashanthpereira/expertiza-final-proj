@@ -294,6 +294,7 @@ class AssignmentController < ApplicationController
     end
 
     importParticipants(params, @assignment.id)
+    addTeams(params, @assignment.id)
 
     if params[:days].nil? && params[:weeks].nil?
       @days = 0
@@ -350,6 +351,28 @@ class AssignmentController < ApplicationController
     end    
   end
 
+  def addTeams(params, assignment_id)
+    assignment = Assignment.find(assignment_id)
+    if params['teamsize']['value'].length > 0
+      Team.randomize_all_by_parent(assignment, "Assignment"  , params[:teamsize][:value].to_i)
+    end
+
+    if params[:file]
+      file = params[:file]
+      file.each_line do |line|
+        line.chomp!
+        unless line.empty?
+          team_options = line.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/)
+          options = Hash.new
+          options[:has_column_names] = "true"
+          options[:handle_dups] = "ignore"
+
+          AssignmentTeam.import(team_options,session,assignment_id,options)
+        end
+      end
+    end
+  end
+
   def importParticipants(params, assignment_id)
 
     assignment = Assignment.find(assignment_id)
@@ -362,8 +385,8 @@ class AssignmentController < ApplicationController
       end
     end
 
-    if params[:file]
-      file = params[:file]
+    if params[:participants_file]
+      file = params[:participants_file]
       file.each_line do |line|
         line.chomp!
         unless line.empty?

@@ -7,11 +7,16 @@
     $(document).ready(function() {
         $("#tabs").tabs({ selected: 0, event: "click"});
     });
+
 </script>
 
 <h1>Editing assignment</h1>
 
 <% form_tag({:action => 'update', :id => @assignment, :review_limit => @limits[:review], :metareview_limit => @limits[:metareview], :teammate_limit => @limits[:teammate], :feedback_limit => @limits[:feedback]}, {:method => 'post', :multipart => true, :onsubmit => 'return checkForm();'}) do %>
+
+    <%
+       session[:return_to] = request.request_uri
+    %>
 
     <div id="tabs">
       <ul>
@@ -39,7 +44,7 @@
       </div>
       <%if @assignment.team_assignment? %>
       <div id="tab6">
-        <%= render :partial => 'team/form' %>
+        <%= render :partial => 'teams' %>
       </div>
       <% end %>
     </div>
