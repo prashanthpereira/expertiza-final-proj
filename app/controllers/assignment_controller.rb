@@ -180,6 +180,15 @@ class AssignmentController < ApplicationController
     @assignment = Assignment.find(params[:id])
     prepare_to_edit
     @participants = @assignment.participants
+    assignment_teams = AssignmentTeam.find_all_by_parent_id(params[:id])
+    for at in assignment_teams
+      tn = TeamNode.find_by_node_object_id(at.id)
+      if @child_nodes.nil?
+        @child_nodes = [tn]
+      elsif
+        @child_nodes[@child_nodes.length] = tn
+      end
+    end
   end
   
   def prepare_to_edit

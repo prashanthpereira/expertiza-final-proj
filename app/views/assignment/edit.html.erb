@@ -6,8 +6,8 @@
 <script>
     $(document).ready(function() {
         $("#tabs").tabs({ selected: 0, event: "click"});
-        $("#tabs1").tabs({ selected: 0, event: "click"});
-        $("#tabs2").tabs({ selected: 0, event: "click"});
+        $("#tabs1").tabs({ selected: 1, event: "click"});
+        $("#tabs2").tabs({ selected: 1, event: "click"});
     });
 
 </script>
@@ -59,13 +59,17 @@
         <% tabs.create('Teams', 'Teams') do %>
             <div id="tabs2">
               <ul>
-                <li><a href="#subtab4"> Create Random Teams </a></li>
-                <li><a href="#subtab5"> Import Teams</a></li>
+                <li><a href="#subtab4"> Existing Teams </a></li>
+                <li><a href="#subtab5"> Create Random Teams </a></li>
+                <li><a href="#subtab6"> Import Teams</a></li>
               </ul>
               <div id="subtab4">
-                <%= render :partial => 'create_random_teams' %>
+                <%= render :partial => 'tree_display/page_footer' %>
               </div>
               <div id="subtab5">
+                <%= render :partial => 'create_random_teams' %>
+              </div>
+              <div id="subtab6">
                 <%= render :partial => 'import_teams' %>
               </div>
             </div>
