@@ -36,13 +36,20 @@
     <% tabs.create('Participants', 'Participants') do %>
         <div id="tabs1">
           <ul>
-            <li><a href="#subtab1"> Add Participants</a></li>
-            <li><a href="#subtab2"> Import Participants</a></li>
+            <li><a href="#subtab1"> Existing Participants</a></li>
+            <li><a href="#subtab2"> Add Participants</a></li>
+            <li><a href="#subtab3"> Import Participants</a></li>
           </ul>
           <div id="subtab1">
-            <%= render :partial => 'add_participants' %>
+            <%= render :partial => '/shared_scripts/user_list',
+                       :locals => {:controller => 'participants',
+                                   :user_list => @participants}%>
+            <br/>
           </div>
           <div id="subtab2">
+            <%= render :partial => 'add_participants' %>
+          </div>
+          <div id="subtab3">
             <%= render :partial => 'import_participants' %>
           </div>
         </div>
@@ -52,13 +59,13 @@
         <% tabs.create('Teams', 'Teams') do %>
             <div id="tabs2">
               <ul>
-                <li><a href="#subtab3"> Create Random Teams </a></li>
-                <li><a href="#subtab4"> Import Teams</a></li>
+                <li><a href="#subtab4"> Create Random Teams </a></li>
+                <li><a href="#subtab5"> Import Teams</a></li>
               </ul>
-              <div id="subtab3">
+              <div id="subtab4">
                 <%= render :partial => 'create_random_teams' %>
               </div>
-              <div id="subtab4">
+              <div id="subtab5">
                 <%= render :partial => 'import_teams' %>
               </div>
             </div>
