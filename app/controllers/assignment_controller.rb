@@ -13,10 +13,8 @@ class AssignmentController < ApplicationController
     new_assign.update_attribute('name','Copy of '+new_assign.name)     
     new_assign.update_attribute('created_at',Time.now)
     new_assign.update_attribute('updated_at',Time.now)
-    
 
-    
-    if new_assign.save 
+    if new_assign.save
       Assignment.record_timestamps = true
 
       old_assign.assignment_questionnaires.each do |aq|
@@ -353,8 +351,10 @@ class AssignmentController < ApplicationController
 
   def addTeams(params, assignment_id)
     assignment = Assignment.find(assignment_id)
-    if params['teamsize']['value'].length > 0
-      Team.randomize_all_by_parent(assignment, "Assignment"  , params[:teamsize][:value].to_i)
+    if params['teamsize']
+      if params['teamsize']['value'] != nil && params['teamsize']['value'].to_i > 0
+        Team.randomize_all_by_parent(assignment, "Assignment"  , params[:teamsize][:value].to_i)
+      end
     end
 
     if params[:file]

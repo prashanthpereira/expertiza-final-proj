@@ -8,29 +8,24 @@
 <script>
     $(document).ready(function() {
         $("#tabs").tabs({ selected: 0, event: "click"});
+        $("#tabs1").tabs({ selected: 0, event: "click"});
+        $("#tabs2").tabs({ selected: 0, event: "click"});
     });
 </script>
 
 <% form_tag( {:action => 'create'}, {:method => 'post', :multipart => true, :onsubmit => 'return checkForm();', :onload => 'addElement();'})do %>
 
-    <div id="tabs">
-      <ul>
-        <li><a href="#tab1"> General</a></li>
-        <li><a href="#tab2"> Rubrics</a></li>
-        <li><a href="#tab3"> Review Strategy</a></li>
-        <li><a href="#tab4"> Deadlines</a></li>
-        <li><a href="#tab5"> Add Participants</a></li>
-      </ul>
-      <div id="tab1">
+    <% tabs = TabsRenderer.new(self) %>
+    <% tabs.create('General', 'General') do %>
         <%= render :partial => 'content' %>
-      </div>
-      <div id="tab2">
+    <% end %>
+    <% tabs.create('Rubrics', 'Rubrics') do %>
         <%= render :partial => 'rubrics' %>
-      </div>
-      <div id="tab3">
+    <% end %>
+    <% tabs.create('Review_Strategy', 'Review Strategy') do %>
         <%= render :partial => 'review_strategy' %>
-      </div>
-      <div id="tab4">
+    <% end %>
+    <% tabs.create('Deadlines', 'Deadlines') do %>
         <%= render :partial => 'due_dates' %>
         <% if @course != nil %>
             <%= hidden_field_tag('assignment[course_id]', @course.id) %>
@@ -39,12 +34,23 @@
         <% end %>
         <%= hidden_field_tag('assignment[private]',@private) %>
         <%= render :partial => 'availability_flag' %>
-      </div>
-      <div id="tab5">
-        <%= render :partial => 'import_users' %>
-      </div>
+    <% end %>
+    <% tabs.create('Participants', 'Participants') do %>
+        <div id="tabs1">
+          <ul>
+            <li><a href="#subtab1"> Add Participants</a></li>
+            <li><a href="#subtab2"> Import Participants</a></li>
+          </ul>
+          <div id="subtab1">
+            <%= render :partial => 'add_participants' %>
+          </div>
+          <div id="subtab2">
+            <%= render :partial => 'import_participants' %>
+          </div>
+        </div>
+    <% end %>
 
-    </div>
+    <%= tabs.render %>
 
     &nbsp;&nbsp;<%= submit_tag "Save assignment" %>
 <% end %>
