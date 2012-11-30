@@ -40,28 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/assignment/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="-2.5769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="assignment_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="assignment_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/assignment_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="0" selection-start="7347" selection-end="7347" vertical-scroll-proportion="-2.68">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_availability_flag.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/assignment/_availability_flag.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="79" selection-start="181" selection-end="181" vertical-scroll-proportion="-3.2692308">
+            <state line="162" column="10" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.27213115">
               <folding />
             </state>
           </provider>
@@ -70,7 +52,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/team/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="116" selection-end="116" vertical-scroll-proportion="-2.6153846">
+            <state line="6" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
@@ -79,16 +61,16 @@
       <file leaf-file-name="_create_random_teams.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/assignment/_create_random_teams.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.2692308">
+            <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/assignment/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="56" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.23587224">
+            <state line="69" column="84" selection-start="2489" selection-end="2489" vertical-scroll-proportion="-10.346154">
               <folding />
             </state>
           </provider>
@@ -97,16 +79,7 @@
       <file leaf-file-name="_add_teams.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/assignment/_add_teams.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/team_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="20" selection-start="2192" selection-end="2692" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="-7.1923075">
               <folding />
             </state>
           </provider>
@@ -136,14 +109,14 @@
         <option value="$PROJECT_DIR$/app/views/team/_list.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignment/_review_strategy.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignment/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/assignment/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignment/_content.html.erb" />
         <option value="$PROJECT_DIR$/app/views/team/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignment/_availability_flag.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/assignment_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/assignment/_add_teams.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/assignment/_create_random_teams.html.erb" />
         <option value="$PROJECT_DIR$/app/views/team/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/assignment/_create_random_teams.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/assignment/_add_teams.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/assignment/new.html.erb" />
       </list>
     </option>
   </component>
@@ -171,7 +144,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -202,50 +175,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="expertiza-final-proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertiza-final-proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertiza-final-proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertiza-final-proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertiza-final-proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree_display" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,6 +251,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertiza-final-proj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertiza-final-proj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,12 +696,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52878785" sideWeight="0.84046054" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15953948" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3037879" sideWeight="0.6792763" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15953948" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23190789" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32072368" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32072368" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -827,15 +774,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/assignment_controller.rb</url>
-          <line>362</line>
+          <line>361</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/assignment_controller.rb</url>
-          <line>439</line>
+          <line>438</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/assignment_controller.rb</url>
-          <line>164</line>
+          <line>163</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/team.rb</url>
@@ -889,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/team_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="20" selection-start="2192" selection-end="2692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/team.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="0" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.0">
@@ -917,20 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/team/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="116" selection-end="116" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assignment_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="7347" selection-end="7347" vertical-scroll-proportion="-2.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/team/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="744" selection-end="771" vertical-scroll-proportion="0.49772727">
@@ -938,23 +864,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/assignment/_add_teams.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/team_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.9230769">
+        <state line="88" column="20" selection-start="2192" selection-end="2692" vertical-scroll-proportion="1.228169">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/team/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/assignment/_create_random_teams.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.2692308">
+        <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/assignment/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="56" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.23587224">
+        <state line="69" column="84" selection-start="2489" selection-end="2489" vertical-scroll-proportion="-10.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/assignment/_add_teams.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assignment_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="10" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.27213115">
           <folding />
         </state>
       </provider>
