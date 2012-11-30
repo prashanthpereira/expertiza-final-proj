@@ -159,6 +159,7 @@ class AssignmentController < ApplicationController
         @assignment.create_node()
         flash[:alert] = "There is already an assignment named \"#{@assignment.name}\". &nbsp;<a style='color: blue;' href='../../assignment/edit/#{@assignment.id}'>Edit assignment</a>" if @assignment.duplicate_name?
         importParticipants(params, @assignment.id)
+        addTeams(params, @assignment.id)
         flash[:note] = 'Assignment was successfully created.'
         redirect_to :action => 'list', :controller => 'tree_display'
       rescue
@@ -174,7 +175,7 @@ class AssignmentController < ApplicationController
     end
     
   end
-  
+
   def edit
     @assignment = Assignment.find(params[:id])
     prepare_to_edit
@@ -379,6 +380,21 @@ class AssignmentController < ApplicationController
           options[:has_column_names] = "true"
           options[:handle_dups] = "ignore"
           AssignmentTeam.import(team_options,session,assignment_id,options)
+        end
+         end
+      end
+
+    if params[:team][:name]
+      if params[:team][:name] != nil && params[:team][:name] != ''
+        parent = Object.const_get(session[:team_type]).find(assignment_id)
+        begin
+          Team.check_for_existing(parent, params[:team][:name], session[:team_type])
+          team = Object.const_get(session[:team_type]+'Team').create(:name => params[:team][:name], :parent_id => assignment_id)
+          TeamNode.create(:parent_id => assignment_id, :node_object_id => team.id)
+            # redirect_to :action => 'list', :id => assignment_id
+        rescue TeamExistsError
+          flash[:error] = $!
+          #redirect_to :action => 'new', :id => assignment_id
         end
       end
     end

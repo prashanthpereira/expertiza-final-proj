@@ -9132,3 +9132,663 @@ Authorised? true
 Rendering template within layouts/application
 Rendering assignment/edit
 Completed in 819ms (View: 192, DB: 205) | 200 OK [http://localhost/assignment/edit/461]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2012-11-29 23:35:11) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 692ms (View: 89, DB: 65) | 200 OK [http://localhost/]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-11-29 23:35:16) [GET]
+  Parameters: {"name"=>["manage instructor content"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/drill
+Completed in 328ms (DB: 227) | 302 Found [http://localhost/menu/manage%20instructor%20content]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2012-11-29 23:35:16) [GET]
+  Parameters: {"action"=>"drill", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 155ms (DB: 41) | 302 Found [http://localhost/tree_display/drill]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:35:17) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1643ms (View: 1109, DB: 435) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing ApplicationController#delete (for 127.0.0.1 at 2012-11-29 23:35:25) [GET]
+  Parameters: {"action"=>"delete", "id"=>"461", "controller"=>"assignment"}
+
+SyntaxError (C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/app/controllers/assignment_controller.rb:512: syntax error, unexpected $end, expecting kEND):
+  rake (0.9.2.2) lib/rake/ext/module.rb:36:in `const_missing'
+  C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+  C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#delete (for 127.0.0.1 at 2012-11-29 23:36:12) [GET]
+  Parameters: {"action"=>"delete", "id"=>"461", "controller"=>"assignment"}
+
+SyntaxError (C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/app/controllers/assignment_controller.rb:512: syntax error, unexpected $end, expecting kEND):
+  rake (0.9.2.2) lib/rake/ext/module.rb:36:in `const_missing'
+  C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+  C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:38:41) [GET]
+  Parameters: {"action"=>"delete", "id"=>"461", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 2547ms (DB: 1676) | 302 Found [http://localhost/assignment/delete/461]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:38:43) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1475ms (View: 926, DB: 452) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:38:49) [GET]
+  Parameters: {"action"=>"delete", "id"=>"460", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1002ms (DB: 463) | 302 Found [http://localhost/assignment/delete/460]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:38:51) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1415ms (View: 877, DB: 441) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:38:56) [GET]
+  Parameters: {"action"=>"delete", "id"=>"459", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 895ms (DB: 472) | 302 Found [http://localhost/assignment/delete/459]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:38:57) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1441ms (View: 914, DB: 429) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:39:03) [GET]
+  Parameters: {"action"=>"delete", "id"=>"455", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1118ms (DB: 604) | 302 Found [http://localhost/assignment/delete/455]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:39:04) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1634ms (View: 865, DB: 635) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:39:13) [GET]
+  Parameters: {"action"=>"delete", "id"=>"454", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1167ms (DB: 641) | 302 Found [http://localhost/assignment/delete/454]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:39:14) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1507ms (View: 869, DB: 542) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:40:47) [GET]
+  Parameters: {"action"=>"delete", "id"=>"453", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1181ms (DB: 694) | 302 Found [http://localhost/assignment/delete/453]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:40:48) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1396ms (View: 869, DB: 434) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:40:53) [GET]
+  Parameters: {"action"=>"delete", "id"=>"448", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 465ms (DB: 254) | 302 Found [http://localhost/assignment/delete/448]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:40:53) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1852ms (View: 863, DB: 883) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:40:59) [GET]
+  Parameters: {"force"=>"1", "action"=>"delete", "id"=>"448", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 6571ms (DB: 5581) | 302 Found [http://localhost/assignment/delete/448?force=1]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:41:06) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1650ms (View: 875, DB: 660) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:41:13) [GET]
+  Parameters: {"action"=>"delete", "id"=>"446", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1301ms (DB: 803) | 302 Found [http://localhost/assignment/delete/446]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:41:14) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1491ms (View: 882, DB: 438) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#new (for 127.0.0.1 at 2012-11-29 23:41:24) [GET]
+  Parameters: {"private"=>"0", "action"=>"new", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/new
+Completed in 755ms (View: 305, DB: 160) | 200 OK [http://localhost/assignment/new?private=0]
+
+
+Processing AssignmentController#create (for 127.0.0.1 at 2012-11-29 23:43:20) [POST]
+  Parameters: {"assignment_helper"=>{"no_of_reviews"=>"1"}, "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "private"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "availability_flag"=>"true", "team_count"=>"2", "course_id"=>"", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"", "action"=>"create", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "drop_topic_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>""}, "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "usernames"=>{"value"=>"abby,abdiel,abigale,abigayle"}, "controller"=>"assignment", "submit_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "deadlineTitle0"=>"Submission deadline", "review_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>""}, "reviewofreview_deadline"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>""}, "weeks"=>"", "team"=>{"name"=>""}}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/new
+
+ActionView::TemplateError (undefined method `submission_allowed_id' for 6:Fixnum) on line #116 of app/views/assignment/_due_dates.html.erb:
+113:                   <img src="/images/cal.gif" onClick="NewCal('drop_topic_due_at','YYYYMMDD',true,24); return false;"/>
+114:                </TD>
+115:                <TD ALIGN=CENTER WIDTH=10%>
+116:                    <%= select('drop_topic_deadline', 'submission_allowed_id', [ ['No', 1],['Late', 2],['OK', 3]],:selected =>3 )%>
+117:                </TD>
+118:                <TD ALIGN=CENTER WIDTH=10%>
+119:                    <%= select('drop_topic_deadline', 'review_allowed_id', [ ['No', 1],['Late', 2],['OK', 3]],:selected =>1 )%>
+
+    app/views/assignment/_due_dates.html.erb:116
+    app/views/assignment/new.html.erb:32
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/new.html.erb:70
+    app/views/assignment/new.html.erb:19
+    app/controllers/assignment_controller.rb:169:in `create'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AssignmentController#create (for 127.0.0.1 at 2012-11-29 23:44:12) [POST]
+  Parameters: {"assignment_helper"=>{"no_of_reviews"=>"1"}, "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "private"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "availability_flag"=>"true", "team_count"=>"2", "course_id"=>"", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"", "action"=>"create", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "drop_topic_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>""}, "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "usernames"=>{"value"=>"prash1"}, "controller"=>"assignment", "submit_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "deadlineTitle0"=>"Submission deadline", "review_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "reviewofreview_deadline"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}, "weeks"=>"", "team"=>{"name"=>""}}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1932ms (DB: 1211) | 302 Found [http://localhost/assignment/create]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:44:14) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1589ms (View: 872, DB: 621) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:44:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 739ms (View: 107, DB: 222) | 200 OK [http://localhost/assignment/edit/463]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:44:29) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length) on line #2 of app/views/shared_scripts/_user_list.html.erb:
+1: <div class = "exp">
+2: <%if user_list.length > 0%>
+3: 
+4: <table>
+5:   <tr ><th colspan=5></th><th colspan=3 class="head">E-mail on ...</th>
+
+    app/views/shared_scripts/_user_list.html.erb:2
+    app/views/assignment/edit.html.erb:46
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/edit.html.erb:80
+    app/views/assignment/edit.html.erb:17
+    app/controllers/assignment_controller.rb:359:in `update'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-11-29 23:45:05) [GET]
+  Parameters: {"name"=>["manage instructor content"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/drill
+Completed in 119ms (DB: 44) | 302 Found [http://localhost/menu/manage%20instructor%20content]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2012-11-29 23:45:06) [GET]
+  Parameters: {"action"=>"drill", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 158ms (DB: 40) | 302 Found [http://localhost/tree_display/drill]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:45:06) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1403ms (View: 860, DB: 442) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:45:19) [GET]
+  Parameters: {"action"=>"edit", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 727ms (View: 85, DB: 229) | 200 OK [http://localhost/assignment/edit/463]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:45:34) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>"prash2"}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length) on line #2 of app/views/shared_scripts/_user_list.html.erb:
+1: <div class = "exp">
+2: <%if user_list.length > 0%>
+3: 
+4: <table>
+5:   <tr ><th colspan=5></th><th colspan=3 class="head">E-mail on ...</th>
+
+    app/views/shared_scripts/_user_list.html.erb:2
+    app/views/assignment/edit.html.erb:46
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/edit.html.erb:80
+    app/views/assignment/edit.html.erb:17
+    app/controllers/assignment_controller.rb:359:in `update'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:46:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 733ms (View: 83, DB: 234) | 200 OK [http://localhost/assignment/edit/463]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:46:52) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length) on line #2 of app/views/shared_scripts/_user_list.html.erb:
+1: <div class = "exp">
+2: <%if user_list.length > 0%>
+3: 
+4: <table>
+5:   <tr ><th colspan=5></th><th colspan=3 class="head">E-mail on ...</th>
+
+    app/views/shared_scripts/_user_list.html.erb:2
+    app/views/assignment/edit.html.erb:46
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/edit.html.erb:80
+    app/views/assignment/edit.html.erb:17
+    app/controllers/assignment_controller.rb:359:in `update'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:48:22) [GET]
+  Parameters: {"action"=>"edit", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 715ms (View: 85, DB: 236) | 200 OK [http://localhost/assignment/edit/463]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:48:25) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length) on line #1 of app/views/tree_display/_page_footer.html.erb:
+1: <% if @child_nodes.length > 0 %>
+2: <BR/>
+3: <BR/>     
+4: <TABLE WIDTH="80%" CELLPADDING="5" ID="theTable">
+
+    app/views/tree_display/_page_footer.html.erb:1
+    app/views/assignment/edit.html.erb:67
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/edit.html.erb:80
+    app/views/assignment/edit.html.erb:17
+    app/controllers/assignment_controller.rb:359:in `update'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:49:01) [GET]
+  Parameters: {"action"=>"edit", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 742ms (View: 92, DB: 234) | 200 OK [http://localhost/assignment/edit/463]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:49:05) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 1449ms (View: 110, DB: 863) | 200 OK [http://localhost/assignment/update/463?feedback_limit=15&metareview_limit=15&review_limit=15&teammate_limit=15]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:49:14) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test-addparticipants", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"true", "reviews_visible_to_all"=>"true", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"2", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"463", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"47", "review"=>"11", "feedback"=>"42", "metareview"=>"130"}, "due_date"=>{"1399"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>"2012-11-30 23:41:25"}, "1400"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>"2012-12-11 23:43:46"}, "1401"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "flag"=>"0", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>"2012-12-13 23:43:46"}}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 1070ms (View: 64, DB: 600) | 200 OK [http://localhost/assignment/update/463?feedback_limit=15&metareview_limit=15&review_limit=15&teammate_limit=15]
+
+
+Processing AssignmentController#delete (for 127.0.0.1 at 2012-11-29 23:49:45) [GET]
+  Parameters: {"action"=>"delete", "id"=>"463", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1656ms (DB: 1199) | 302 Found [http://localhost/assignment/delete/463]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:49:47) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1618ms (View: 889, DB: 630) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing AssignmentController#new (for 127.0.0.1 at 2012-11-29 23:50:13) [GET]
+  Parameters: {"private"=>"0", "action"=>"new", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/new
+Completed in 598ms (View: 160, DB: 158) | 200 OK [http://localhost/assignment/new?private=0]
