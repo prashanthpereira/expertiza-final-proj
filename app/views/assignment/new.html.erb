@@ -52,22 +52,6 @@
           </div>
         </div>
     <% end %>
-
-    <% tabs.create('Teams', 'Teams') do %>
-        <div id="tabs2">
-          <ul>
-            <li><a href="#subtab3"> Create Teams</a></li>
-            <li><a href="#subtab4"> Import Teams</a></li>
-          </ul>
-          <div id="subtab3">
-            <%= render :partial => 'add_teams' %>
-          </div>
-          <div id="subtab4">
-            <%= render :partial => 'import_teams' %>
-          </div>
-        </div>
-    <% end %>
-
     <%= tabs.render %>
 
     &nbsp;&nbsp;<%= submit_tag "Save assignment" %>
