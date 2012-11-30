@@ -9792,3 +9792,128 @@ Authorised? true
 Rendering template within layouts/application
 Rendering assignment/new
 Completed in 598ms (View: 160, DB: 158) | 200 OK [http://localhost/assignment/new?private=0]
+
+
+Processing AssignmentController#create (for 127.0.0.1 at 2012-11-29 23:55:51) [POST]
+  Parameters: {"assignment_helper"=>{"no_of_reviews"=>"1"}, "teamsize"=>{"value"=>"1"}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test1", "staggered_deadline"=>"false", "private"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"false", "reviews_visible_to_all"=>"false", "spec_location"=>"", "wiki_type_id"=>"1", "availability_flag"=>"false", "team_count"=>"0", "course_id"=>"", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"", "action"=>"create", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "drop_topic_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>""}, "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"0", "review"=>"0", "feedback"=>"0", "metareview"=>"0"}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "submit_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"1", "submission_allowed_id"=>"3", "resubmission_allowed_id"=>"1", "due_at"=>""}, "deadlineTitle0"=>"Submission deadline", "review_deadline"=>{"rereview_allowed_id"=>"1", "threshold"=>"8", "review_of_review_allowed_id"=>"1", "review_allowed_id"=>"3", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"1", "due_at"=>""}, "reviewofreview_deadline"=>{"rereview_allowed_id"=>"2", "threshold"=>"8", "review_of_review_allowed_id"=>"3", "review_allowed_id"=>"2", "submission_allowed_id"=>"2", "resubmission_allowed_id"=>"2", "due_at"=>""}, "weeks"=>"", "team"=>{"name"=>""}}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 611ms (DB: 279) | 302 Found [http://localhost/assignment/create]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-11-29 23:55:51) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1502ms (View: 817, DB: 553) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing TeamController#list (for 127.0.0.1 at 2012-11-29 23:55:58) [GET]
+  Parameters: {"action"=>"list", "id"=>"464", "type"=>"Assignment", "controller"=>"team"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering team/list
+Completed in 303ms (View: 59, DB: 84) | 200 OK [http://localhost/team/list/464?type=Assignment]
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:56:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"464", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 752ms (View: 151, DB: 200) | 200 OK [http://localhost/assignment/edit/464]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:56:25) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test1", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"false", "reviews_visible_to_all"=>"false", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"0", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"464", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"0", "review"=>"0", "feedback"=>"0", "metareview"=>"0"}, "usernames"=>{"value"=>"prash1,prash2,prash3"}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 969ms (View: 147, DB: 367) | 200 OK [http://localhost/assignment/update/464?feedback_limit=15&metareview_limit=15&review_limit=15&teammate_limit=15]
+
+
+Processing CourseController#edit (for 127.0.0.1 at 2012-11-29 23:57:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"course"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering course/edit
+Completed in 389ms (View: 30, DB: 214) | 200 OK [http://localhost/course/edit/3]
+
+
+Processing AssignmentController#edit (for 127.0.0.1 at 2012-11-29 23:58:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"464", "controller"=>"assignment"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+Completed in 739ms (View: 166, DB: 198) | 200 OK [http://localhost/assignment/edit/464]
+
+
+Processing AssignmentController#update (for 127.0.0.1 at 2012-11-29 23:58:58) [POST]
+  Parameters: {"review_limit"=>"15", "feedback_limit"=>"15", "teamsize"=>{"value"=>""}, "commit"=>"Save assignment", "assignment"=>{"review_topic_threshold"=>"0", "name"=>"test1", "staggered_deadline"=>"false", "directory_path"=>"", "team_assignment"=>"true", "allow_suggestions"=>"false", "reviews_visible_to_all"=>"false", "spec_location"=>"", "wiki_type_id"=>"1", "team_count"=>"0", "review_assignment_strategy"=>"Instructor-Selected"}, "limits"=>{"teammate"=>"15", "review"=>"15", "feedback"=>"15", "metareview"=>"15"}, "days"=>"0", "action"=>"update", "authenticity_token"=>"gU4JqIVtrqJK3fa2Ly7TVoCUVy9SBr03ShmTaLzJa+0=", "id"=>"464", "metareview_limit"=>"15", "weights"=>{"teammate"=>"0", "review"=>"100", "feedback"=>"0", "metareview"=>"0"}, "questionnaires"=>{"teammate"=>"0", "review"=>"0", "feedback"=>"0", "metareview"=>"0"}, "usernames"=>{"value"=>""}, "controller"=>"assignment", "weeks"=>"0", "teammate_limit"=>"15"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering assignment/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length) on line #2 of app/views/shared_scripts/_user_list.html.erb:
+1: <div class = "exp">
+2: <%if user_list.length > 0%>
+3: 
+4: <table>
+5:   <tr ><th colspan=5></th><th colspan=3 class="head">E-mail on ...</th>
+
+    app/views/shared_scripts/_user_list.html.erb:2
+    app/views/assignment/edit.html.erb:46
+    app/models/tabs_renderer.rb:35:in `send'
+    app/models/tabs_renderer.rb:35:in `method_missing'
+    app/models/tabs_renderer.rb:30:in `render_bodies'
+    app/models/tabs_renderer.rb:29:in `collect'
+    app/models/tabs_renderer.rb:29:in `render_bodies'
+    app/models/tabs_renderer.rb:15:in `render'
+    app/views/assignment/edit.html.erb:80
+    app/views/assignment/edit.html.erb:17
+    app/controllers/assignment_controller.rb:359:in `update'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+    C:/RailsInstaller/Ruby1.3/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+    -e:1:in `load'
+    -e:1
+
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/prash/RubymineProjects/Expertiza/expertiza-final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors

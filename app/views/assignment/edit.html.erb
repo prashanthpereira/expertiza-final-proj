@@ -8,6 +8,11 @@
         $("#tabs").tabs({ selected: 0, event: "click"});
         $("#tabs1").tabs({ selected: 1, event: "click"});
         $("#tabs2").tabs({ selected: 1, event: "click"});
+        var dropdownIndex = document.getElementById('teamselect').selectedIndex;
+        var dropdownValue = document.getElementById('teamselect')[dropdownIndex].value;
+        if(dropdownValue != "true"){
+            $('#Teams').hide();
+        }
     });
 
 </script>
@@ -55,7 +60,6 @@
         </div>
     <% end %>
 
-    <%  if @assignment.team_assignment?  %>
         <% tabs.create('Teams', 'Teams') do %>
             <div id="tabs2">
               <ul>
@@ -75,7 +79,6 @@
             </div>
         <% end %>
 
-    <% end %>
 
     <%= tabs.render %>
 
