@@ -10,8 +10,11 @@
         $("#tabs").tabs({ selected: 0, event: "click"});
         $("#tabs1").tabs({ selected: 0, event: "click"});
         $("#tabs2").tabs({ selected: 0, event: "click"});
+
     });
 </script>
+
+
 
 <% form_tag( {:action => 'create'}, {:method => 'post', :multipart => true, :onsubmit => 'return checkForm();', :onload => 'addElement();'})do %>
 
@@ -48,6 +51,22 @@
             <%= render :partial => 'import_participants' %>
           </div>
         </div>
+    <% end %>
+
+    <% tabs.create('Teams', 'Teams') do %>
+        <div id="tabs2">
+          <ul>
+            <li><a href="#subtab3"> Create Teams</a></li>
+            <li><a href="#subtab4"> Import Teams</a></li>
+          </ul>
+          <div id="subtab3">
+            <%= render :partial => 'add_teams' %>
+          </div>
+          <div id="subtab4">
+            <%= render :partial => 'import_teams' %>
+          </div>
+        </div>
+
     <% end %>
 
     <%= tabs.render %>

@@ -157,9 +157,10 @@ class AssignmentController < ApplicationController
         
         # Creating node information for assignment display
         @assignment.create_node()
-        importParticipants(params, @assignment.id)
-
         flash[:alert] = "There is already an assignment named \"#{@assignment.name}\". &nbsp;<a style='color: blue;' href='../../assignment/edit/#{@assignment.id}'>Edit assignment</a>" if @assignment.duplicate_name?
+        importParticipants(params, @assignment.id)
+        addTeams(params, @assignment.id)
+
         flash[:note] = 'Assignment was successfully created.'
         redirect_to :action => 'list', :controller => 'tree_display'
       rescue
@@ -360,13 +361,13 @@ class AssignmentController < ApplicationController
 
   def addTeams(params, assignment_id)
     assignment = Assignment.find(assignment_id)
-    if params['teamsize']
+    if params['teamsize'] &&    params['teamsize']['value']!=''
       if params['teamsize']['value'] != nil && params['teamsize']['value'].to_i > 0
         Team.randomize_all_by_parent(assignment, "Assignment"  , params[:teamsize][:value].to_i)
       end
-    end
+   # end
 
-    if params[:file]
+    elsif params[:file] && params[:file] != ''
       file = params[:file]
       file.each_line do |line|
         line.chomp!
@@ -378,6 +379,21 @@ class AssignmentController < ApplicationController
 
           AssignmentTeam.import(team_options,session,assignment_id,options)
         end
+
+      end
+
+    elsif params[:team][:name]
+      if params[:team][:name] != nil && params[:team][:name] != ''
+      parent = Object.const_get(session[:team_type]).find(assignment_id)
+      begin
+        Team.check_for_existing(parent, params[:team][:name], session[:team_type])
+        team = Object.const_get(session[:team_type]+'Team').create(:name => params[:team][:name], :parent_id => assignment_id)
+        TeamNode.create(:parent_id => assignment_id, :node_object_id => team.id)
+       # redirect_to :action => 'list', :id => assignment_id
+      rescue TeamExistsError
+        flash[:error] = $!
+        #redirect_to :action => 'new', :id => assignment_id
+      end
       end
     end
   end
@@ -417,6 +433,25 @@ class AssignmentController < ApplicationController
         end
       end
     end
+  end
+
+  def inherit
+
+    if @assignment.course_id >= 0
+      course = Course.find(@assignment.course_id)
+      teams = course.get_teams
+      if teams.length > 0
+        teams.each{
+            |team|
+          team.copy(@assignment.id)
+        }
+      else
+        flash[:note] = "No teams were found to inherit."
+      end
+    else
+      flash[:error] = "No course was found for this assignment."
+    end
+    redirect_to :controller => 'team', :action => 'list', :id => @assignment.id
   end
 
   def show
